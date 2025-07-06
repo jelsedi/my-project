@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Add your CSS styles here or link to an external stylesheet */
+    </style>
 </head>
 <body>
-    <div id= "header">
+    <div id="header">
         <div class="container">      
           <div class="header-text">
               <p>Web Developer</p>
-              <h1>Hi ,i'm <span>Sirma </span><br>Edith From Kenya</h1>      
+              <h1>Hi, I'm <span>Sirma </span><br>Edith From Kenya</h1>      
           </div>
           <div class="header-image">
-            <img src="@/assets/looook.jpg" class="header-img">
+            <img src="@/assets/looook.jpg" class="header-img" alt="Header Image">
           </div>
         </div>
     </div>
@@ -31,34 +36,34 @@
                        I'm a passionate and detail-oriented web developer with a strong foundation in front-end and back-end technologies. 
                        I specialize in building responsive, user-friendly websites and web applications using modern tools like HTML, CSS, JavaScript, React, and Node.js. 
                        With a keen eye for design and a problem-solving mindset, I enjoy turning complex ideas into clean, efficient code that delivers real value to users.
-                       I thrive in collaborative environments and love learning new technologies to stay ahead in this ever-evolving industry Whether it's optimizing performance, 
-                       improving UX, or integrating APIs, I’m always focused on writing clean,maintainable code that scales. When I'm not coding, I’m probably exploring new design trends,
+                       I thrive in collaborative environments and love learning new technologies to stay ahead in this ever-evolving industry. Whether it's optimizing performance, 
+                       improving UX, or integrating APIs, I’m always focused on writing clean, maintainable code that scales. When I'm not coding, I’m probably exploring new design trends,
                        contributing to open-source projects, or working on side projects that push my skills even further.
                     </p>
                     <div id="tab-titles">
-                        <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick ="opentab('Expirience')">Expirience</p>
-                        <p class="tab-links" onclick ="opentab('Education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
                     </div>
-                    <div class ="tab-contents active tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>designing web/app interface</li>
-                            <li><span>Web development</span><br>designing web/app interface</li>
-                            <li><span>App development</span><br>Building Anroid /IOS apps</li>
+                            <li><span>UI/UX</span><br>Designing web/app interface</li>
+                            <li><span>Web development</span><br>Designing web/app interface</li>
+                            <li><span>App development</span><br>Building Android / iOS apps</li>
                         </ul>
-                 </div>
-                    <div class="tab-contents" id="Expirience">
+                    </div>
+                    <div class="tab-contents" id="Experience">
                         <ul>
-                            <li><span>2025 - current </span><br>Web developer at Coperativer Bank</li>
+                            <li><span>2025 - current</span><br>Web developer at Cooperative Bank</li>
                             <li><span>2020-2024</span><br>Team Lead Hackathon</li>
-                            <li><span>2017-2019</span><br>Internship at summit bank</li>
+                            <li><span>2017-2019</span><br>Internship at Summit Bank</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>2020</span><br>design web/app interfacetraining  at Code Academy </li>
+                            <li><span>2020</span><br>Design web/app interface training at Code Academy</li>
                             <li><span>2019 development</span><br>Web development at FreeCamp Academy</li>
-                            <li><span>2018 development</span><br>Joined Moringa university</li>
+                            <li><span>2018 development</span><br>Joined Moringa University</li>
                         </ul>
                     </div>
                 </div>
@@ -66,43 +71,43 @@
         </div>
     </div>
     <!-----------------services--------------------->
-    <!-- <div id="services"> -->
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-house"></i>
-<i class="fa-brands fa-github"></i>
-
-        <div class="Services-list">
-           <div>
-            <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Creating visually appealing and user-friendly website layouts.</p>
-                <a href="#">Learn More</a>
-           </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                  <h2>Web Development</h2>
-                  <p>Building responsive and interactive websites using modern technologies.</p>
-                  <a href="#">Learn More</a>
-        </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Development</h2>
-                <p>Developing mobile applications for Android and iOS platforms.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-bug-slash"></i>
-                <h2>SEO Optimization</h2>
-                <p>Improving website visibility and ranking on search engines.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-arrows-to-circle"></i>
-                <h2>Content Creation</h2>
-                <p>Creating engaging content for websites and social media platforms.</p>
-                <a href="#">Learn More</a>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-brands fa-github"></i>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually appealing and user-friendly website layouts.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and interactive websites using modern technologies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Developing mobile applications for Android and iOS platforms.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bug-slash"></i>
+                    <h2>SEO Optimization</h2>
+                    <p>Improving website visibility and ranking on search engines.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrows-to-circle"></i>
+                    <h2>Content Creation</h2>
+                    <p>Creating engaging content for websites and social media platforms.</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
@@ -121,7 +126,7 @@
                     </div>
                 </div>
                 <div class="Work">
-                    <img src="@/assets/work.2.jpg">
+                    <img src="@/assets/work.2.jpg" alt="Social Media Project">
                     <div class="layer">
                         <h3>Social Media</h3>
                         <p>The app connects you to the talented people around the world.
@@ -130,21 +135,19 @@
                     </div>
                 </div>
                 <div class="Work">
-                    <img src="@/assets/work.3.jpg">
+                    <img src="@/assets/work.3.jpg" alt="Work Website">
                     <div class="layer">
-                       <h3> Work Website</h3>
+                       <h3>Work Website</h3>
                         <p>This is a personal portfolio website that showcases my work and skills.</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
-                    
                 </div>
                 <div class="Work">
-                    <img src="@/assets/work.4.jpg">
+                    <img src="@/assets/work.4.jpg" alt="Online Shopping">
                     <div class="layer">
-                        <h3>Online Shopping </h3>
+                        <h3>Online Shopping</h3>
                         <p>This is an online shopping website that allows users to browse and purchase products.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                        
+c                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <a href="#" class="btn">See More</a>
@@ -152,65 +155,55 @@
         </div>
     </div>
 
-        <!-- ------------------contact--------------------->
-        <div id="contact">
-            <div class="container">
-                <h1 class="sub-title">Contact Me</h1>
-                <div class="row">
-                    <div class="contact-left">
-                            <h2>Get In Touch</h2>
-                            <p>jelsedi33@gmail.com</p>
-                            <p><i class="fa-solid fa-location-dot"></i>Location: Nairobi, Kenya</p>
-                            <p><i class="fa-solid fa-phone"></i>Phone: +254 700 000 000</p>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                            <a href="@/assets/Curriculum_Vitae.pdf" download class="btn">Download CV</a>
+    <!-- ------------------contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <h2>Get In Touch</h2>
+                    <p>jelsedi33@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Location: Nairobi, Kenya</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +254 700 000 000</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="contact-right">
-                        <h2>Contact Form</h2>
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
-                            <button type="submit" class="sub">Submit</button>
-                        </form>
-                    </div>
+                    <a href="@/assets/Curriculum_Vitae.pdf" download class="btn">Download CV</a>
                 </div>
-                    
-                    <div class="copyright">
-                        <p>&copy; 2023 Sirma Edith. All rights reserved.</p>
-                        <p><i class="fa-solid fa-heart"></i>Designed by Sirma Edith</p>
-
-                    </div>
+                <div class="contact-right">
+                    <h2>Contact Form</h2>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="sub">Submit</button>
+                    </form>
                 </div>
             </div>
+            <div class="copyright">
+                <p>&copy; 2023 Sirma Edith. All rights reserved.</p>
+                <p><i class="fa-solid fa-heart"></i> Designed by Sirma Edith</p>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
-<script scoped>
-
-
-        // var tablinks = document.getElementsByClassName("tab-links");
-        // var tabcontents = document.getElementsByClassName("tab-contents");
-
-        // function opentab (tabname) {
-        //     for (let tablink of tablinks) {
-        //         tablink.classList.remove("active-link");
-        //     }
-
-        //     for (let tabcontent of tabcontents) {
-        //         tabcontent.classList.remove("active-tab");
-        //     }
-
-        //     event.currentTarget.classList.add("active-link");
-        //     // event.currentTarget.classList.add("active-link") is used to add the "active-link" class to the clicked tab link, indicating that it is currently active.
-        //     document.getElementById(tabname).classList.add("active-tab");
-        // }
-
-  
-</script>
-<style scoped >
 </html>
