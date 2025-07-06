@@ -6,6 +6,211 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id= "header">
+        <div class="container">      
+          <div class="header-text">
+              <p>Web Developer</p>
+              <h1>Hi ,i'm <span>Sirma </span><br>Edith From Kenya</h1>      
+          </div>
+          <div class="header-image">
+            <img src="@/assets/looook.jpg" class="header-img">
+          </div>
+        </div>
+    </div>
+
+    <!---------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="@/assets/background1.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                       I'm a passionate and detail-oriented web developer with a strong foundation in front-end and back-end technologies. 
+                       I specialize in building responsive, user-friendly websites and web applications using modern tools like HTML, CSS, JavaScript, React, and Node.js. 
+                       With a keen eye for design and a problem-solving mindset, I enjoy turning complex ideas into clean, efficient code that delivers real value to users.
+                       I thrive in collaborative environments and love learning new technologies to stay ahead in this ever-evolving industry Whether it's optimizing performance, 
+                       improving UX, or integrating APIs, I’m always focused on writing clean,maintainable code that scales. When I'm not coding, I’m probably exploring new design trends,
+                       contributing to open-source projects, or working on side projects that push my skills even further.
+                    </p>
+                    <div id="tab-titles">
+                        <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick ="opentab('Expirience')">Expirience</p>
+                        <p class="tab-links" onclick ="opentab('Education')">Education</p>
+                    </div>
+                    <div class ="tab-contents active tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing web/app interface</li>
+                            <li><span>Web development</span><br>designing web/app interface</li>
+                            <li><span>App development</span><br>Building Anroid /IOS apps</li>
+                        </ul>
+                 </div>
+                    <div class="tab-contents" id="Expirience">
+                        <ul>
+                            <li><span>2025 - current </span><br>Web developer at Coperativer Bank</li>
+                            <li><span>2020-2024</span><br>Team Lead Hackathon</li>
+                            <li><span>2017-2019</span><br>Internship at summit bank</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>design web/app interfacetraining  at Code Academy </li>
+                            <li><span>2019 development</span><br>Web development at FreeCamp Academy</li>
+                            <li><span>2018 development</span><br>Joined Moringa university</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------services--------------------->
+    <!-- <div id="services"> -->
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-house"></i>
+<i class="fa-brands fa-github"></i>
+
+        <div class="Services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating visually appealing and user-friendly website layouts.</p>
+                <a href="#">Learn More</a>
+           </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                  <h2>Web Development</h2>
+                  <p>Building responsive and interactive websites using modern technologies.</p>
+                  <a href="#">Learn More</a>
+        </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                <p>Developing mobile applications for Android and iOS platforms.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bug-slash"></i>
+                <h2>SEO Optimization</h2>
+                <p>Improving website visibility and ranking on search engines.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-arrows-to-circle"></i>
+                <h2>Content Creation</h2>
+                <p>Creating engaging content for websites and social media platforms.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="Work">
+                    <img src="@/assets/work.1.jpg" alt="Portfolio Project">
+                    <div class="layer">
+                        <h3>Portfolio Project</h3>
+                        <p>This project showcases my ability to create dynamic and responsive web applications.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="@/assets/work.2.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects you to the talented people around the world.
+                        <br>It allows you to share your work and get feedback from others.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="@/assets/work.3.jpg">
+                    <div class="layer">
+                       <h3> Work Website</h3>
+                        <p>This is a personal portfolio website that showcases my work and skills.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="Work">
+                    <img src="@/assets/work.4.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping </h3>
+                        <p>This is an online shopping website that allows users to browse and purchase products.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- ------------------contact--------------------->
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                            <h2>Get In Touch</h2>
+                            <p>jelsedi33@gmail.com</p>
+                            <p><i class="fa-solid fa-location-dot"></i>Location: Nairobi, Kenya</p>
+                            <p><i class="fa-solid fa-phone"></i>Phone: +254 700 000 000</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <a href="@/assets/Curriculum_Vitae.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <h2>Contact Form</h2>
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="sub">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                    
+                    <div class="copyright">
+                        <p>&copy; 2023 Sirma Edith. All rights reserved.</p>
+                        <p><i class="fa-solid fa-heart"></i>Designed by Sirma Edith</p>
+
+                    </div>
+                </div>
+            </div>
+
 </body>
+<script scoped>
+
+
+        // var tablinks = document.getElementsByClassName("tab-links");
+        // var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // function opentab (tabname) {
+        //     for (let tablink of tablinks) {
+        //         tablink.classList.remove("active-link");
+        //     }
+
+        //     for (let tabcontent of tabcontents) {
+        //         tabcontent.classList.remove("active-tab");
+        //     }
+
+        //     event.currentTarget.classList.add("active-link");
+        //     // event.currentTarget.classList.add("active-link") is used to add the "active-link" class to the clicked tab link, indicating that it is currently active.
+        //     document.getElementById(tabname).classList.add("active-tab");
+        // }
+
+  
+</script>
+<style scoped >
 </html>
