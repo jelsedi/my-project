@@ -351,6 +351,23 @@ form input, form textarea {
     </style>
 </head>
 <body>
+     <div class="wrapper">
+    <header>
+      <nav>
+        <img src="images/sirma_.png" class="logo" alt="Sirma Design logo in red and black text with the word Sirma in bold red letters and Design in black script, surrounded by a black oval outline. The logo has a creative and professional tone, set on a white background.">
+        <ul>
+            <li><a href="#">
+              <RouterLink to="/">Home</RouterLink>
+            </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>  
+    </header>
+    <RouterView />
+  </div>
     <div id="header">
         <div class="container">      
           <div class="header-text">
@@ -462,7 +479,7 @@ form input, form textarea {
                     <div class="layer">
                         <h3>Portfolio Project</h3>
                         <p>This project showcases my ability to create dynamic and responsive web applications.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#" title="View Portfolio Project"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="Work">
@@ -471,7 +488,7 @@ form input, form textarea {
                         <h3>Social Media</h3>
                         <p>The app connects you to the talented people around the world.
                         <br>It allows you to share your work and get feedback from others.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#" title="View Social Media Project"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="Work">
@@ -479,7 +496,7 @@ form input, form textarea {
                     <div class="layer">
                        <h3>Work Website</h3>
                         <p>This is a personal portfolio website that showcases my work and skills.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#" title="View Work Website"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="Work">
@@ -506,10 +523,10 @@ form input, form textarea {
                     <p><i class="fa-solid fa-location-dot"></i> Location: Nairobi, Kenya</p>
                     <p><i class="fa-solid fa-phone"></i> Phone: +254 700 000 000</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="@/assets/Curriculum_Vitae.pdf" download class="btn">Download CV</a>
                 </div>
